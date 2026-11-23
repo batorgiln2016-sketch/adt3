@@ -52,7 +52,7 @@ def Peek():
 
 
 def ShowQueue():
-   global Queue, HeadPointer, TailPointer
+    global Queue, HeadPointer, TailPointer
     if IsEmpty():
         return ""
     Result = []
@@ -60,10 +60,9 @@ def ShowQueue():
         Result.append(str(Queue[i]))
     return " ".join(Result)
 
-
 # Exercise 5
 def Canteen(Commands):
-   global Queue, HeadPointer, TailPointer
+    global Queue, HeadPointer, TailPointer
     for i in range(8):
         Queue[i] = -1
     HeadPointer = 0
