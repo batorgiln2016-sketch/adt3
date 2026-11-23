@@ -52,8 +52,13 @@ def Peek():
 
 
 def ShowQueue():
-    # Write your code here
-    pass
+   global Queue, HeadPointer, TailPointer
+    if IsEmpty():
+        return ""
+    Result = []
+    for i in range(HeadPointer, TailPointer + 1):
+        Result.append(str(Queue[i]))
+    return " ".join(Result)
 
 
 # Exercise 5
