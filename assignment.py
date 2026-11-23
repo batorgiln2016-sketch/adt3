@@ -63,5 +63,18 @@ def ShowQueue():
 
 # Exercise 5
 def Canteen(Commands):
-    # Write your code here
-    pass
+   global Queue, HeadPointer, TailPointer
+    for i in range(8):
+        Queue[i] = -1
+    HeadPointer = 0
+    TailPointer = -1
+    Served = []
+    for Command in Commands:
+        if Command == "serve":
+            Student = Dequeue()
+            if Student != -1:
+                Served.append(Student)
+        else:
+            Parts = Command.split(" ")
+            Enqueue(Parts[1])
+    return Served
