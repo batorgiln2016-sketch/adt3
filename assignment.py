@@ -2,7 +2,7 @@
 # Do NOT use .append() or .pop() inside Enqueue() and Dequeue() - move the pointers yourself.
 
 # Exercise 1
-Queue = []
+Queue = [-1, -1, -1, -1, -1, -1, -1, -1]
 HeadPointer = 0
 TailPointer = -1
 # Write code here to fill Queue with 8 elements, all -1
