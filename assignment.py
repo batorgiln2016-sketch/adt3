@@ -25,8 +25,12 @@ def IsFull():
 
 # Exercise 2
 def Enqueue(Item):
-    # Write your code here
-    pass
+    global Queue, HeadPointer, TailPointer
+    if IsFull():
+        return False
+    TailPointer = TailPointer + 1
+    Queue[TailPointer] = Item
+    return True
 
 
 # Exercise 3
