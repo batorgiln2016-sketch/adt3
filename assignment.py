@@ -35,8 +35,12 @@ def Enqueue(Item):
 
 # Exercise 3
 def Dequeue():
-    # Write your code here
-    pass
+    global Queue, HeadPointer, TailPointer
+    if IsEmpty():
+        return -1
+    Item = Queue[HeadPointer]
+    HeadPointer = HeadPointer + 1
+    return Item
 
 
 # Exercise 4
