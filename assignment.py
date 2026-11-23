@@ -45,8 +45,10 @@ def Dequeue():
 
 # Exercise 4
 def Peek():
-    # Write your code here
-    pass
+    global Queue, HeadPointer, TailPointer
+    if IsEmpty():
+        return -1
+    return Queue[HeadPointer]
 
 
 def ShowQueue():
