@@ -9,14 +9,19 @@ TailPointer = -1
 
 
 def IsEmpty():
-    # Write your code here
-    pass
+    global Queue, HeadPointer, TailPointer
+    if HeadPointer > TailPointer:
+        return True
+    else:
+        return False
 
 
 def IsFull():
-    # Write your code here
-    pass
-
+    global Queue, HeadPointer, TailPointer
+    if HeadPointer > TailPointer:
+        return False
+    else:
+        return True
 
 # Exercise 2
 def Enqueue(Item):
