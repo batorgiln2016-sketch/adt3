@@ -18,10 +18,10 @@ def IsEmpty():
 
 def IsFull():
     global Queue, HeadPointer, TailPointer
-    if HeadPointer > TailPointer:
-        return False
-    else:
+    if TailPointer == 7:
         return True
+    else:
+        return False
 
 # Exercise 2
 def Enqueue(Item):
